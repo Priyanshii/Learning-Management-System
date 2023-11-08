@@ -8,13 +8,13 @@ const CourseCurriculum = ({ lecture }) => {
       <section className='mt-1'>
         <span className='text-xl font-medium text-[#414141]'>{index + 1}.</span>
       </section>
-      <section className='w-full flex flex-col items-start'>
-        <div className='w-full flex flex-row items-center justify-between'>
+      <div className='w-full flex flex-row md:flex-col md:items-start gap-4 md:justify-normal items-center justify-between'>
+        <section className=' flex flex-col items-start'>
           <span className='mr-auto text-xl font-medium text-[#222222]'>{topic}</span>
-          <span className='text-lg font-medium text-[#8C8C8C]'>{duration}</span>
-        </div>
-        <span className='text-base font-normal text-[#414141]'>{content}</span>
-      </section>
+          <span className='text-base font-normal text-[#414141]'>{content}</span>
+        </section>
+        <span className='w-auto px-3 py-1 text-base font-medium text-[#8C8C8C] border-[1px] border-solid border-[#8C8C8C] rounded-2xl text-center'>{duration}</span>
+      </div>
     </div>
   )
 }

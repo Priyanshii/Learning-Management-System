@@ -9,10 +9,10 @@ function CourseCard({ courseData }) {
   const { id, name, instructor, thumbnail, description, duration, likes_count, level } = courseData;
 
   return (
-    <div className='w-[48%] min-w-[400px] h-[260px] border-[1px] border-solid border-[#E8E8E8] rounded-bl-2xl'>
+    <div className='w-[48%] lg:w-[66%] min-w-[300px] min-h-[260px] border-[1px] border-solid border-[#E8E8E8] rounded-bl-2xl'>
       <Link to={"/course-details/" + id} className='w-full'>
-        <div className='flex flex-row items-start justify-start gap-6 h-full w-full'>
-          <div className='flex items-center justify-center h-full w-[30%]'>
+        <div className='flex flex-row items-start justify-start lg:flex-col lg:items-center lg:justify-normal gap-6 h-full w-full'>
+          <div className='flex place-self-center items-center justify-center h-full w-[30%] lg:w-full py-4 lg:h-[100px] lg:border-b-[1px] lg:border-solid lg:border-[#E8E8E8]'>
             <img src={thumbnail} alt={name} className=' h-full w-full pl-4 object-contain' />
           </div>
           <div className='flex flex-col items-start justify-center gap-1 p-6'>

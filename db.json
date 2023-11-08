@@ -51,7 +51,7 @@
       "duration": "8 weeks",
       "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
       "location": "Online",
-      "likes_count": 49,
+      "likes_count": 78,
       "level": "Intermediate",
       "prerequisites": [
         "Proficiency in JavaScript and related technologies",
@@ -139,7 +139,7 @@
           "schedule": "Mondays, 6:00 PM - 8:00 PM",
           "location": "Online",
           "level": "Beginner",
-          "progress_status": "20%"
+          "progress_status": "40%"
         },
         {
           "id": 2,

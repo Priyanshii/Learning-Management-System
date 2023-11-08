@@ -15,13 +15,10 @@ function StudentEnrolledCourseCard({ courseData, studentId }) {
   }
 
   return (
-    <div className='w-[48%] min-w-[400px] h-[300px] border-[1px] border-solid border-[#E8E8E8] rounded-bl-2xl relative'>
-      <button onClick={handleCompleteCourseButton} className='group p-2 absolute bottom-0 right-0'>
-        <AiFillCheckCircle className={`${progress_status === '100%' ? "fill-green-700" : "fill-[#a39f9f]"} w-8 h-8`} />
-      </button>
+    <div className='w-[48%] lg:w-[66%] min-w-[300px] min-h-[300px] border-[1px] border-solid border-[#E8E8E8] rounded-bl-2xl relative flex flex-col items-start'>
       <Link to={"/course-details/" + id} className='w-full'>
-        <div className='flex flex-row items-start justify-start gap-6 h-full w-full'>
-          <div className='flex items-center justify-center h-full w-[30%]'>
+        <div className='flex flex-row items-start justify-start lg:flex-col lg:items-center lg:justify-normal gap-6 h-full w-full'>
+          <div className='flex place-self-center items-center justify-center h-full w-[30%] lg:w-full py-4 lg:h-[100px] lg:border-b-[1px] lg:border-solid lg:border-[#E8E8E8]'>
             <img src={thumbnail} alt={name} className=' h-full w-full pl-4 object-contain' />
           </div>
           <div className='flex flex-col items-start justify-center gap-1 p-6'>
@@ -56,6 +53,12 @@ function StudentEnrolledCourseCard({ courseData, studentId }) {
           </div>
         </div>
       </Link>
+      <button onClick={handleCompleteCourseButton} className='p-1 m-1 place-self-end justify-end flex flex-col items-center'>
+        <AiFillCheckCircle className={`${progress_status === '100%' ? "fill-green-600" : "fill-[#9b9797]"} w-8 h-8`} />
+        <span className={`text-[12px] ${progress_status === '100%' ? "text-green-600" : "text-[#9b9797]"}`}>
+          {progress_status === '100%' ? "Completed" : "Mark as Complete"}
+        </span>
+      </button>
     </div>
   )
 }

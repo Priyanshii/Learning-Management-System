@@ -20,7 +20,7 @@ const CourseDetails = () => {
   return (
     <article className='block m-auto max-w-[1336px] my-12'>
       <div className='w-full flex flex-col gap-12 px-12'>
-        <section className='w-full flex flex-row items-center justify-start gap-20'>
+        <section className='w-full flex flex-row md:flex-col items-center justify-start gap-20'>
           <section className='flex flex-col items-center justify-start gap-6 '>
             <section className='w-full flex flex-col items-start justify-start gap-2'>
               <span className='font-medium text-4xl text-center'>
@@ -34,13 +34,13 @@ const CourseDetails = () => {
               <span className='text-[#595959]'>
                 By: {instructor}
               </span>
-              <section className='w-full flex flex-row items-center justify-start mt-8 text-[#8C8C8C]'>
-                <span className=' border-r-[1px] border-solid border-[#aaa8a8] pr-2'>Duration: {duration}
-                </span>
-                <span className='border-r-[1px] border-solid border-[#aaa8a8] pr-2 pl-2'>
+              <section className='w-full flex flex-row md:flex-col md:items-start items-center justify-start mt-8 text-[#8C8C8C]'>
+                <span className='md:border-none border-r-[1px] border-solid border-[#aaa8a8] pr-2'>Duration: {duration}
+                </span> 
+                <span className='md:border-none border-r-[1px] border-solid border-[#aaa8a8] pr-2 pl-2 md:p-0'>
                   {level}
                 </span>
-                <span className='pl-2'>
+                <span className='pl-2 md:p-0'>
                   {location}
                 </span>
                 <span className='ml-auto border-[1px] border-solid border-[#aaa8a8] rounded-2xl px-3 py-2'>
@@ -54,7 +54,7 @@ const CourseDetails = () => {
               </section>
             </section>
           </section>
-          <section className='h-[300px]'>
+          <section className='h-[300px] md:order-first'>
             <img src={thumbnail} alt={name} className='h-full object-contain' />
           </section>
         </section>

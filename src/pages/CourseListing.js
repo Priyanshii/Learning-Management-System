@@ -15,9 +15,9 @@ const CourseListing = () => {
   }, [])
 
   return (
-    <div>
+    <div className='w-full h-full'>
       <SearchBarContainer />
-      <section className='bg-white mt-12 mx-12'>
+      <section className='bg-white py-12 box-border mx-12'>
         <section className='flex flex-col items-start justify-start gap-6'>
           <span className='font-medium text-base text-[#262626]'>All Courses</span>
           <section className='w-full flex flex-row flex-wrap items-center justify-start gap-10'>

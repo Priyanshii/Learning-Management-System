@@ -8,7 +8,7 @@ import StudentDashboard from './StudentDashboard';
 
 const Pages = () => {
   return (
-    <div>
+    <div className='h-full w-full'>
       <Header />
       <Routes>
         <Route path="/" element={<CourseListing />} />
