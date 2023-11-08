@@ -11,7 +11,7 @@
       "schedule": "Mondays, 6:00 PM - 8:00 PM",
       "location": "Online",
       "level": "Beginner",
-      "likes_count": 0,
+      "likes_count": 110,
       "prerequisites": [
         "Basic JavaScript knowledge",
         "Familiarity with React"
@@ -51,7 +51,7 @@
       "duration": "8 weeks",
       "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
       "location": "Online",
-      "likes_count": 1,
+      "likes_count": 49,
       "level": "Intermediate",
       "prerequisites": [
         "Proficiency in JavaScript and related technologies",
@@ -139,7 +139,7 @@
           "schedule": "Mondays, 6:00 PM - 8:00 PM",
           "location": "Online",
           "level": "Beginner",
-          "progress_status": "40%"
+          "progress_status": "20%"
         },
         {
           "id": 2,
@@ -151,7 +151,7 @@
           "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
           "location": "Online",
           "level": "Intermediate",
-          "progress_status": "90%"
+          "progress_status": "70%"
         }
       ]
     }

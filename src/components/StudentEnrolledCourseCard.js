@@ -45,7 +45,7 @@ function StudentEnrolledCourseCard({ courseData, studentId }) {
               </section>
               <span>{schedule}</span>
               <div className='flex flex-row items-center gap-2 w-full'>
-                <div className='h-[10px] w-[80%] border-[1px] border-solid border-[#2c9e15] rounded-md'>
+                <div className='h-[10px] w-[70%] border-[1px] border-solid border-[#2c9e15] rounded-md'>
                   <div style={{ width: progress_status }} className='bg-green-500 h-full'></div>
                 </div>
                 <span className='text-sm font-medium text-[#8C8C8C]'>

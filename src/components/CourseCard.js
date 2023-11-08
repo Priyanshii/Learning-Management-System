@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import socketIOClient from 'socket.io-client';
+import { AiFillLike } from 'react-icons/ai';
 
 function CourseCard({ courseData }) {
 
   const { id, name, instructor, thumbnail, description, duration, likes_count, level } = courseData;
 
   return (
-    <div className='w-[48%] min-w-[400px] h-[240px] border-[1px] border-solid border-[#E8E8E8] rounded-bl-2xl'>
+    <div className='w-[48%] min-w-[400px] h-[260px] border-[1px] border-solid border-[#E8E8E8] rounded-bl-2xl'>
       <Link to={"/course-details/" + id} className='w-full'>
         <div className='flex flex-row items-start justify-start gap-6 h-full w-full'>
           <div className='flex items-center justify-center h-full w-[30%]'>
@@ -22,6 +24,10 @@ function CourseCard({ courseData }) {
             <section className='w-full flex flex-row items-center justify-start mt-8 text-[#8C8C8C]'>
               <span className=' border-r-[1px] border-solid border-[#aaa8a8] pr-2'>Duration: {duration}</span>
               <span className='pl-2'>{level}</span>
+            </section>
+            <section className='text-gray-500 flex flex-row items-center justify-start gap-3 mt-4'>
+              <AiFillLike className='w-7 h-7'/>
+              {likes_count}
             </section>
           </div>
         </div>

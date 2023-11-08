@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from '../Api';
+import socketIOClient from 'socket.io-client';
 
 const initialState = {
   loading: false,
@@ -84,3 +85,11 @@ export const getSearchedCourses = ({ coursesList, searchInput }) => async (dispa
   })
   dispatch(setSearchedCoursesSuccess(searchedData));
 }
+
+export const initializeWebSocket = () => (dispatch) => {
+  const socket = socketIOClient('http://localhost:5000', { transports: ['websocket', 'polling', 'flashsocket'] });
+
+  socket.on('dbUpdated', (updatedData) => {
+    dispatch(setCoursesSuccess(updatedData));
+});
+};

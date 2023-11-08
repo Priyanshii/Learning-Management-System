@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import coursesReducer from './slices/coursesSlice';
+import coursesReducer, { initializeWebSocket } from './slices/coursesSlice';
 import studentReducer from './slices/studentSlice';
 
 export const store = configureStore({
@@ -8,3 +8,5 @@ export const store = configureStore({
     student: studentReducer,
   },
 });
+
+store.dispatch(initializeWebSocket());
