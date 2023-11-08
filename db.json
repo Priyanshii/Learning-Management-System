@@ -1,0 +1,159 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Introduction to React Native",
+      "instructor": "John Doe",
+      "description": "Learn the basics of React Native development and build your first mobile app.",
+      "enrollmentStatus": "In Progress",
+      "thumbnail": "https://cdn.jsdelivr.net/gh/kristerkari/react-native-svg-transformer@96add1cd347b6804bd046fe9d4c9b46b0cafdfc5/images/react-native-logo.png",
+      "duration": "10 weeks",
+      "schedule": "Mondays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "level": "Beginner",
+      "likes_count": 0,
+      "prerequisites": [
+        "Basic JavaScript knowledge",
+        "Familiarity with React"
+      ],
+      "syllabus": [
+        {
+          "duration": "4 weeks",
+          "topic": "Introduction to React Native",
+          "content": "Overview of React Native, setting up your development environment."
+        },
+        {
+          "duration": "6 weeks",
+          "topic": "Building Your First App",
+          "content": "Creating a simple mobile app using React Native components."
+        }
+      ],
+      "students": [
+        {
+          "id": 101,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 102,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Introduction to MERN",
+      "instructor": "Mark Johnson",
+      "description": "Learn the advance MERN development and build full stack web application.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "likes_count": 1,
+      "level": "Intermediate",
+      "prerequisites": [
+        "Proficiency in JavaScript and related technologies",
+        "Strong knowledge of HTML, CSS, and web standards",
+        "Familiarity with React",
+        "Familiarity with MongoDB and other NoSQL databases.",
+        "Understanding of RESTful API design and development."
+      ],
+      "syllabus": [
+        {
+          "duration": "3 weeks",
+          "topic": "Introduction to MERN stack",
+          "content": "Overview of MERN stack, setting up your development environment."
+        },
+        {
+          "duration": "5 weeks",
+          "topic": "Building Your First App",
+          "content": "Creating a full stack Web Application."
+        }
+      ],
+      "students": [
+        {
+          "id": 101,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 102,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        }
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": 101,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "bookmarked_courses": [
+        "1"
+      ],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Introduction to React Native",
+          "instructor": "John Doe",
+          "description": "Learn the basics of React Native development and build your first mobile app.",
+          "thumbnail": "https://cdn.jsdelivr.net/gh/kristerkari/react-native-svg-transformer@96add1cd347b6804bd046fe9d4c9b46b0cafdfc5/images/react-native-logo.png",
+          "duration": "8 weeks",
+          "schedule": "Mondays, 6:00 PM - 8:00 PM",
+          "location": "Online",
+          "level": "Beginner",
+          "progress_status": "20%"
+        },
+        {
+          "id": 2,
+          "name": "Introduction to MERN",
+          "instructor": "Mark Johnson",
+          "description": "Learn the advance MERN development and build full stack web application.",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png",
+          "duration": "8 weeks",
+          "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+          "location": "Online",
+          "level": "Intermediate",
+          "progress_status": "50%"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "bookmarked_courses": [
+        "2"
+      ],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Introduction to React Native",
+          "instructor": "John Doe",
+          "description": "Learn the basics of React Native development and build your first mobile app.",
+          "thumbnail": "https://cdn.jsdelivr.net/gh/kristerkari/react-native-svg-transformer@96add1cd347b6804bd046fe9d4c9b46b0cafdfc5/images/react-native-logo.png",
+          "duration": "8 weeks",
+          "schedule": "Mondays, 6:00 PM - 8:00 PM",
+          "location": "Online",
+          "level": "Beginner",
+          "progress_status": "40%"
+        },
+        {
+          "id": 2,
+          "name": "Introduction to MERN",
+          "instructor": "Mark Johnson",
+          "description": "Learn the advance MERN development and build full stack web application.",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png",
+          "duration": "8 weeks",
+          "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+          "location": "Online",
+          "level": "Intermediate",
+          "progress_status": "90%"
+        }
+      ]
+    }
+  ]
+}
