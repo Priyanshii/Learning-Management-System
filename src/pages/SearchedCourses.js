@@ -2,9 +2,8 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
-import SearchBar from '../components/SearchBar';
 import SearchBarContainer from '../components/SearchBarContainer';
-import { getSearchedCourses } from '../redux/slices/coursesSlice';
+import { fetchCourses, getSearchedCourses } from '../redux/slices/coursesSlice';
 
 const SearchedCourses = () => {
 
@@ -17,8 +16,12 @@ const SearchedCourses = () => {
   const searchInput = searchParams.get('search');
 
   useEffect(() => {
+    dispatch(fetchCourses());
+  },[])
+
+  useEffect(() => {
     dispatch(getSearchedCourses({ coursesList, searchInput }));
-  }, [searchParams])
+  }, [searchParams, coursesList])
 
   return (
     <div>
